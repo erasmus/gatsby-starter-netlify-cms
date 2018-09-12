@@ -18,9 +18,18 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
+  - name: "subpages"
+    label: "Sub Pages"
+    folder: "src/subpages"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}      
   - name: "pages"
     label: "Pages"
+    folder: "src/pages/blog"
+    create: true
     files:
       - file: "src/pages/about/index.md"
         label: "About"
